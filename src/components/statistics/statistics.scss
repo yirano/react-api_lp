@@ -1,81 +1,81 @@
-@import '../../modules/colors';
+@import "../../modules/colors";
 
 .statistics {
-	padding: 0 140px;
-	height: 100vh;
-	color: $veryDarkBlue;
-	text-align: center;
+  padding: 0 140px;
+  height: 100vh;
+  color: $veryDarkBlue;
+  text-align: center;
 
-	.statisticsTitleWrapper {
-		width: 37%;
-		margin: 0 auto;
-		padding: 90px 0;
+  .statisticsTitleWrapper {
+    width: 37%;
+    margin: 0 auto;
+    padding: 90px 0;
 
-		p {
-			color: $darkGray;
-			font-size: 0.8em;
-			margin-top: 10px;
-		}
-	}
+    p {
+      color: $darkGray;
+      font-size: 0.8em;
+      margin-top: 10px;
+    }
+  }
 
-	.cardContainer {
-		display: flex;
-		flex-wrap: wrap;
-		position: relative;
-		justify-content: center;
-		height: 40vh;
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    height: 40vh;
 
-		.border {
-			position: absolute;
-			top: 45%;
-			border-top: 8px solid $cyan;
-			height: 20px;
-			width: 70%;
-		}
-		.card {
-			position: relative;
-			background-color: #fff;
-			min-width: 200px;
-			max-width: 30%;
-			height: 250px;
-			padding: 10px 30px;
-			margin: 15px;
-			text-align: left;
-			border-radius: 7px;
-			z-index: 999;
+    .border {
+      position: absolute;
+      top: 45%;
+      border-top: 8px solid $cyan;
+      height: 20px;
+      width: 70%;
+    }
+    .card {
+      position: relative;
+      background-color: #fff;
+      min-width: 200px;
+      max-width: 30%;
+      height: 250px;
+      padding: 10px 30px;
+      margin: 15px;
+      text-align: left;
+      border-radius: 7px;
+      z-index: 999;
 
-			.icon {
-				position: absolute;
-				width: 75px;
-				height: 75px;
-				border-radius: 50%;
-				background-color: $darkViolet;
-				top: -37.5px;
-				left: 26px;
-				background-repeat: no-repeat;
-				background-size: 60%;
-				background-position: center;
-			}
+      .icon {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: $darkViolet;
+        top: -37.5px;
+        left: 26px;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+      }
 
-			.cardWordWrap {
-				margin-top: 60px;
+      .cardWordWrap {
+        margin-top: 60px;
 
-				p {
-					color: $darkGray;
-					font-size: 0.7em;
-					line-height: 1.7em;
-					margin-top: 20px;
-				}
-			}
-			&:nth-child(1) {
-				align-self: flex-start;
-			}
-			&:nth-child(2) {
-				align-self: center;
-			}
-			&:nth-child(3) {
-				align-self: flex-end;
-			}
-		}
-	}
+        p {
+          color: $darkGray;
+          font-size: 0.7em;
+          line-height: 1.7em;
+          margin-top: 20px;
+        }
+      }
+      &:nth-child(1) {
+        align-self: flex-start;
+      }
+      &:nth-child(2) {
+        align-self: center;
+      }
+      &:nth-child(3) {
+        align-self: flex-end;
+      }
+    }
+  }
 }

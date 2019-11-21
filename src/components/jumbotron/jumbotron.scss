@@ -1,68 +1,69 @@
 @import '../../modules/colors';
 
 .jumbotron {
-	height: 75vh;
+	height: 88vh;
 
 	.top-jumbotron {
 		display: flex;
-		height: 90%;
+		height: 87%;
 		background-color: #fff;
+		padding-bottom: 57px;
 
 		.leftJumbo {
 			display: flex;
 			flex-flow: column;
-			width: 50%;
+			width: 55%;
 			align-self: center;
-			padding-left: 130px;
+			padding-left: 160px;
 			color: $darkGray;
 
 			h1 {
-				font-size: 3em;
+				font-size: 4.2em;
 				color: $veryDarkViolet;
-				line-height: 65px;
+				line-height: 1.2em;
 			}
 
 			p {
 				width: 80%;
+				font-size: 1.2em;
 			}
 		}
 
 		.rightJumbo {
 			flex-shrink: 0;
-			width: 50%;
+			width: 45%;
 			background: url('../../imgs/illustration-working.svg') no-repeat;
 			overflow: visible;
 			background-size: auto 70%;
-			background-position-x: 130%;
 			background-position-y: center;
 		}
 	}
 
 	.bottom-jumbotron {
 		display: flex;
-		margin: 0 auto;
-		height: 120px;
-		width: 82.5%;
+		margin: 10px auto;
+		height: 160px;
+		width: 80%;
 		justify-content: center;
 		align-items: center;
 		background-color: $darkViolet;
 		background-image: url('../../imgs/bg-shorten-desktop.svg');
 		background-size: cover;
 		border-radius: 10px;
-		margin-top: -60px;
+		margin-top: -80px;
 
 		input {
 			border: none;
 			border-radius: 5px;
 
 			&[type="text"] {
-				height: 35%;
+				// height: 30%;
 				width: 82%;
 				padding: 10px 20px;
 			}
 
 			&[type="submit"] {
-				height: 35%;
+				// height: 35%;
 				width: 98px;
 				background-color: $cyan;
 				margin-left: 20px;
@@ -74,13 +75,14 @@
 
 .btn-jumbotron,
 .btn-cta {
-	width: 120px;
-	height: 35px;
+	width: 200px;
+	height: 55px;
 	background-color: $cyan;
 	color: #fff;
 	border-radius: 30px;
 	border: none;
 	margin-top: 25px;
+	font-size: 1.1em;
 
 	&:hover {
 		background-color: rgb(97, 238, 238);
