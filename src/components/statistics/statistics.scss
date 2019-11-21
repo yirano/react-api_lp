@@ -1,0 +1,18 @@
+@import '../../modules/colors';
+
+.statistics {
+  padding: 0 140px;
+  padding-top: 90px;
+  height: 100vh;
+  color: $veryDarkBlue;
+  text-align: center;
+
+  .statisticsTitleWrapper {
+    width: 45%;
+    margin: 0 auto;
+
+    p {
+      color: $darkGray;
+    }
+  }
+}

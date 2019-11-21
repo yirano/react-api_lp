@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./statistics.scss";
 
 export class statistics extends Component {
   state = {
