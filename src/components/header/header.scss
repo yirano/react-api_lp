@@ -9,14 +9,18 @@ header {
 	h2 {
 		color: $darkViolet;
 	}
+
 	nav {
 		width: 100%;
+
 		ul {
 			display: flex;
 			padding: 10px 0;
+
 			li {
 				display: flex;
 				font-size: 0.8em;
+
 				a {
 					color: $darkGray;
 					font-weight: 500;
@@ -37,7 +41,6 @@ header {
 
 	.navRight {
 		float: right;
-		margin-right: 40px;
 	}
 
 	.btn-signUp {
@@ -50,6 +53,7 @@ header {
 		border: 2px solid $cyan;
 		font-size: 0.8em;
 		cursor: pointer;
+
 		&:hover {
 			opacity: 0.8;
 		}
