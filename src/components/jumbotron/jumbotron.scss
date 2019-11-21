@@ -54,17 +54,19 @@
 
 		input {
 			border: none;
-			border-radius: 5px;
+			border-radius: 10px;
+			height: 37%;
+			font-size: 1em;
 
 			&[type="text"] {
 				// height: 30%;
-				width: 82%;
+				width: 72%;
 				padding: 10px 20px;
 			}
 
 			&[type="submit"] {
 				// height: 35%;
-				width: 98px;
+				width: 168px;
 				background-color: $cyan;
 				margin-left: 20px;
 				color: #fff;
