@@ -12,4 +12,10 @@ body {
 
 main {
 	max-width: 1440px;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: $veryDarkBlue;
 }

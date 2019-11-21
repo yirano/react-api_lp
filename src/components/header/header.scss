@@ -1,5 +1,50 @@
 @import '../../modules/colors';
 @import '../../modules/fonts';
 
-h1 {
+header {
+	display: flex;
+	nav {
+		width: 100%;
+		ul {
+			display: flex;
+			padding: 10px 0;
+			li {
+				display: flex;
+				font-size: 0.8em;
+				a {
+					color: $gray;
+					font-weight: 500;
+					padding: 9px 12px;
+
+					&:hover {
+						color: $veryDarkBlue;
+					}
+				}
+			}
+		}
+	}
+
+	.navLeft {
+		float: left;
+		margin-left: 40px;
+	}
+
+	.navRight {
+		float: right;
+		margin-right: 40px;
+	}
+
+	.btn-signUp {
+		margin-top: 4px;
+		height: 32px;
+		width: 70px;
+		background-color: $cyan;
+		color: #fff;
+		border-radius: 20px;
+		border: 2px solid $cyan;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
 }
