@@ -10,11 +10,10 @@ body {
 	font-family: $mainFont;
 }
 
-main,
-footer {
+main {
 	max-width: 1440px;
 	font-size: 18px;
-	padding: 40px 0;
+	padding: 40px 0 0;
 }
 
 section {

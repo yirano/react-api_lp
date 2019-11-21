@@ -1,0 +1,53 @@
+@import '../../modules/colors';
+
+footer {
+	padding: 40px 140px;
+	display: flex;
+	background-color: $veryDarkViolet;
+	color: #fff;
+	justify-content: center;
+	a {
+		color: #fff;
+	}
+	ul {
+		font-size: 0.7em;
+		list-style: none;
+		margin: 0 20px;
+
+		li {
+			&:nth-child(1) {
+				font-weight: 500;
+				margin-bottom: 14px;
+			}
+		}
+	}
+
+	div {
+		width: 35%;
+	}
+
+	.footerFirst {
+		display: flex;
+	}
+	.footerSecond {
+		display: flex;
+		ul {
+			padding: 0 10px;
+		}
+	}
+
+	.footerThird {
+		ul {
+			float: right;
+			display: flex;
+			flex-flow: row;
+
+			li {
+				padding: 0 10px;
+				&:nth-last-child(1) {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}

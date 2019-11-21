@@ -25,16 +25,6 @@
 			p {
 				width: 80%;
 			}
-
-			.btn-jumbotron {
-				width: 120px;
-				height: 35px;
-				background-color: $cyan;
-				color: #fff;
-				border-radius: 30px;
-				border: none;
-				margin-top: 25px;
-			}
 		}
 
 		.rightJumbo {
@@ -79,5 +69,21 @@
 				color: #fff;
 			}
 		}
+	}
+}
+
+.btn-jumbotron,
+.btn-cta {
+	width: 120px;
+	height: 35px;
+	background-color: $cyan;
+	color: #fff;
+	border-radius: 30px;
+	border: none;
+	margin-top: 25px;
+
+	&:hover {
+		background-color: rgb(97, 238, 238);
+		cursor: pointer;
 	}
 }

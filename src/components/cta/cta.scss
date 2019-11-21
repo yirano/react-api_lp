@@ -1,0 +1,19 @@
+@import '../../modules/colors.scss';
+
+.cta {
+	padding: 45px 0;
+	background-image: url('../../imgs/bg-boost-desktop.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $darkViolet;
+	background-position: center;
+	text-align: center;
+
+	h2 {
+		color: #fff;
+	}
+}
+
+.btn-cta {
+	margin-top: 10px;
+}
