@@ -10,9 +10,15 @@ body {
 	font-family: $mainFont;
 }
 
-main {
+main,
+footer {
 	max-width: 1440px;
 	font-size: 18px;
+	padding: 40px 0;
+}
+
+section {
+	background-color: $grayBackground;
 }
 
 a {
