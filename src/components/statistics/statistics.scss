@@ -1,90 +1,90 @@
 @import "../../modules/colors";
 
 .statistics {
-  padding: 0 120px;
-  height: 87vh;
-  color: $veryDarkBlue;
-  text-align: center;
+	padding: 0 120px;
+	height: 87vh;
+	color: $veryDarkBlue;
+	text-align: center;
 
-  .statisticsTitleWrapper {
-    width: 44%;
-    margin: 0 auto;
-    padding: 90px 0;
+	.statisticsTitleWrapper {
+		width: 44%;
+		margin: 0 auto;
+		padding: 90px 0;
 
-    h2 {
-      font-size: 2em;
-    }
+		h2 {
+			font-size: 2em;
+		}
 
-    p {
-      color: $darkGray;
-      font-size: 0.9m;
-      margin-top: 10px;
-      line-height: 1.7em;
-    }
-  }
+		p {
+			color: $darkGray;
+			font-size: 0.9m;
+			margin-top: 10px;
+			line-height: 1.7em;
+		}
+	}
 
-  .cardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
-    height: 42.9vh;
+	.cardContainer {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		justify-content: center;
+		height: 33vh;
 
-    .border {
-      position: absolute;
-      top: 43%;
-      border-top: 8px solid $cyan;
-      height: 20px;
-      width: 70%;
-    }
+		.border {
+			position: absolute;
+			top: 50%;
+			border-top: 8px solid $cyan;
+			height: 20px;
+			width: 70%;
+		}
 
-    .card {
-      position: relative;
-      background-color: #fff;
-      min-width: 300px;
-      max-width: 30%;
-      height: 270px;
-      padding: 10px 30px;
-      margin: 15px;
-      text-align: left;
-      border-radius: 7px;
-      z-index: 999;
+		.card {
+			position: relative;
+			background-color: #fff;
+			min-width: 300px;
+			max-width: 30%;
+			height: 270px;
+			padding: 10px 30px;
+			margin: 15px;
+			text-align: left;
+			border-radius: 7px;
+			z-index: 999;
 
-      .icon {
-        position: absolute;
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;
-        background-color: $darkViolet;
-        top: -37.5px;
-        left: 29px;
-        background-repeat: no-repeat;
-        background-size: 55%;
-        background-position: center;
-      }
+			.icon {
+				position: absolute;
+				width: 85px;
+				height: 85px;
+				border-radius: 50%;
+				background-color: $darkViolet;
+				top: -37.5px;
+				left: 29px;
+				background-repeat: no-repeat;
+				background-size: 55%;
+				background-position: center;
+			}
 
-      .cardWordWrap {
-        margin-top: 72px;
+			.cardWordWrap {
+				margin-top: 72px;
 
-        p {
-          color: $darkGray;
-          font-size: 0.88em;
-          line-height: 1.7em;
-          margin-top: 18px;
-        }
-      }
+				p {
+					color: $darkGray;
+					font-size: 0.88em;
+					line-height: 1.7em;
+					margin-top: 18px;
+				}
+			}
 
-      &:nth-child(1) {
-        align-self: flex-start;
-      }
+			&:nth-child(1) {
+				align-self: flex-start;
+			}
 
-      &:nth-child(2) {
-        align-self: center;
-      }
+			&:nth-child(2) {
+				align-self: center;
+			}
 
-      &:nth-child(3) {
-        align-self: flex-end;
-      }
-    }
-  }
+			&:nth-child(3) {
+				align-self: flex-end;
+			}
+		}
+	}
 }
