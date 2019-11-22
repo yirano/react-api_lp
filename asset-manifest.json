@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff27cba5.chunk.css",
-    "main.js": "/static/js/main.7a88166f.chunk.js",
-    "main.js.map": "/static/js/main.7a88166f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.df26c7f1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.df26c7f1.js.map",
-    "static/js/2.e630a83e.chunk.js": "/static/js/2.e630a83e.chunk.js",
-    "static/js/2.e630a83e.chunk.js.map": "/static/js/2.e630a83e.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.66a789b4d84f56d7adbc35c4273d4f4f.js": "/precache-manifest.66a789b4d84f56d7adbc35c4273d4f4f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.ff27cba5.chunk.css.map": "/static/css/main.ff27cba5.chunk.css.map",
-    "static/media/cta.scss": "/static/media/bg-boost-desktop.dc8b886b.svg",
-    "static/media/jumbotron.scss": "/static/media/illustration-working.5029d049.svg",
-    "static/media/icon-brand-recognition.svg": "/static/media/icon-brand-recognition.1922b68a.svg",
-    "static/media/icon-detailed-records.svg": "/static/media/icon-detailed-records.e3d9caa9.svg",
-    "static/media/icon-facebook.svg": "/static/media/icon-facebook.7febcff9.svg",
-    "static/media/icon-fully-customizable.svg": "/static/media/icon-fully-customizable.cc099cea.svg",
-    "static/media/icon-instagram.svg": "/static/media/icon-instagram.996b697c.svg",
-    "static/media/icon-pinterest.svg": "/static/media/icon-pinterest.c557c3d4.svg",
-    "static/media/icon-twitter.svg": "/static/media/icon-twitter.cb4fea0b.svg"
+    "main.css": "/react-api_lp/static/css/main.14e25b60.chunk.css",
+    "main.js": "/react-api_lp/static/js/main.142c50a0.chunk.js",
+    "main.js.map": "/react-api_lp/static/js/main.142c50a0.chunk.js.map",
+    "runtime-main.js": "/react-api_lp/static/js/runtime-main.7bba2e38.js",
+    "runtime-main.js.map": "/react-api_lp/static/js/runtime-main.7bba2e38.js.map",
+    "static/js/2.e630a83e.chunk.js": "/react-api_lp/static/js/2.e630a83e.chunk.js",
+    "static/js/2.e630a83e.chunk.js.map": "/react-api_lp/static/js/2.e630a83e.chunk.js.map",
+    "index.html": "/react-api_lp/index.html",
+    "precache-manifest.9e77c0426a1c8489a736a5bab663b444.js": "/react-api_lp/precache-manifest.9e77c0426a1c8489a736a5bab663b444.js",
+    "service-worker.js": "/react-api_lp/service-worker.js",
+    "static/css/main.14e25b60.chunk.css.map": "/react-api_lp/static/css/main.14e25b60.chunk.css.map",
+    "static/media/cta.scss": "/react-api_lp/static/media/bg-boost-desktop.dc8b886b.svg",
+    "static/media/jumbotron.scss": "/react-api_lp/static/media/illustration-working.5029d049.svg",
+    "static/media/icon-brand-recognition.svg": "/react-api_lp/static/media/icon-brand-recognition.1922b68a.svg",
+    "static/media/icon-detailed-records.svg": "/react-api_lp/static/media/icon-detailed-records.e3d9caa9.svg",
+    "static/media/icon-facebook.svg": "/react-api_lp/static/media/icon-facebook.7febcff9.svg",
+    "static/media/icon-fully-customizable.svg": "/react-api_lp/static/media/icon-fully-customizable.cc099cea.svg",
+    "static/media/icon-instagram.svg": "/react-api_lp/static/media/icon-instagram.996b697c.svg",
+    "static/media/icon-pinterest.svg": "/react-api_lp/static/media/icon-pinterest.c557c3d4.svg",
+    "static/media/icon-twitter.svg": "/react-api_lp/static/media/icon-twitter.cb4fea0b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.df26c7f1.js",
+    "static/js/runtime-main.7bba2e38.js",
     "static/js/2.e630a83e.chunk.js",
-    "static/css/main.ff27cba5.chunk.css",
-    "static/js/main.7a88166f.chunk.js"
+    "static/css/main.14e25b60.chunk.css",
+    "static/js/main.142c50a0.chunk.js"
   ]
 }
