@@ -35,30 +35,34 @@ header {
       }
     }
   }
+}
 
-  .navLeft {
-    float: left;
-    margin-left: 40px;
-  }
+.menuIcon {
+  display: none;
+}
 
-  .navRight {
-    float: right;
-  }
+.navLeft {
+  float: left;
+  margin-left: 40px;
+}
 
-  .btn-signUp {
-    margin-top: 4px;
-    height: 32px;
-    width: 70px;
-    background-color: $cyan;
-    color: #fff;
-    border-radius: 20px;
-    border: 2px solid $cyan;
-    font-size: 0.8em;
-    cursor: pointer;
+.navRight {
+  float: right;
+}
 
-    &:hover {
-      opacity: 0.8;
-    }
+.btn-signUp {
+  margin-top: 4px;
+  height: 32px;
+  width: 70px;
+  background-color: $cyan;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid $cyan;
+  font-size: 0.8em;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 
@@ -66,19 +70,25 @@ header {
   header {
     position: relative;
     padding: 0;
-    // justify-content: center;
+    display: flex;
+    flex-flow: column;
     h2 {
-      text-align: left;
+      align-self: start;
+      padding: 38px 29px;
+      font-size: 2.8em;
     }
     nav {
-      position: absolute;
       display: flex;
       flex-flow: column;
-      // align-items: center;
       top: 40px;
       width: 90%;
       background-color: $darkViolet;
       border-radius: 20px;
+      padding: 40px 0;
+      height: 0px;
+      padding: 0px;
+      overflow: hidden;
+
       .navLeft {
         margin: 0;
       }
@@ -87,5 +97,15 @@ header {
         align-items: center;
       }
     }
+    .show {
+      height: 100%;
+      padding: 40px 0;
+      overflow: visible;
+    }
+  }
+  .menuIcon {
+    display: block;
+    width: 40px;
+    height: 50px;
   }
 }
