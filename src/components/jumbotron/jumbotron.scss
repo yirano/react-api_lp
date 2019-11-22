@@ -98,21 +98,27 @@
 		.top-jumbotron {
 			flex-wrap: wrap;
 			height: 80vh;
-			flex-wrap: wrap;
+			justify-content: center;
 			.leftJumbo {
 				padding-left: 0;
-				width: 100%;
+				width: 85%;
+				height: 50%;
 				text-align: center;
-
+				order: 2;
 				h1 {
 					font-size: 2.5em;
 				}
-
 				p {
 					width: 100%;
 				}
+				button {
+					margin: 0 auto;
+				}
 			}
 			.rightJumbo {
+				width: 85%;
+				height: 50%;
+				order: 1;
 			}
 		}
 	}
