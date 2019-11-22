@@ -91,3 +91,29 @@
 		cursor: pointer;
 	}
 }
+
+@media only screen and (max-width: 767px) {
+	.jumbotron {
+		height: 100%;
+		.top-jumbotron {
+			flex-wrap: wrap;
+			height: 80vh;
+			flex-wrap: wrap;
+			.leftJumbo {
+				padding-left: 0;
+				width: 100%;
+				text-align: center;
+
+				h1 {
+					font-size: 2.5em;
+				}
+
+				p {
+					width: 100%;
+				}
+			}
+			.rightJumbo {
+			}
+		}
+	}
+}
