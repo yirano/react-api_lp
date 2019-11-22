@@ -1,20 +1,24 @@
 @import '../../modules/colors';
 
 footer {
-	padding: 40px 140px;
+	padding: 70px 140px;
+	height: 310px;
 	display: flex;
 	background-color: $veryDarkViolet;
 	color: #fff;
 	justify-content: center;
+
 	a {
-		color: #fff;
+		color: $gray;
 	}
+
 	ul {
-		font-size: 0.7em;
 		list-style: none;
 		margin: 0 20px;
 
 		li {
+			margin-bottom: 10px;
+
 			&:nth-child(1) {
 				font-weight: 500;
 				margin-bottom: 14px;
@@ -22,21 +26,25 @@ footer {
 		}
 	}
 
-	div {
-		width: 35%;
-	}
 
 	.footerFirst {
 		display: flex;
+		width: 25%;
 	}
+
 	.footerSecond {
 		display: flex;
+		width: 45%;
+		justify-content: center;
+
 		ul {
 			padding: 0 10px;
 		}
 	}
 
 	.footerThird {
+		width: 30%;
+
 		ul {
 			float: right;
 			display: flex;
@@ -44,6 +52,7 @@ footer {
 
 			li {
 				padding: 0 10px;
+
 				&:nth-last-child(1) {
 					padding-right: 0;
 				}
