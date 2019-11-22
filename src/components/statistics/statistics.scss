@@ -1,10 +1,12 @@
 @import "../../modules/colors";
 
 .statistics {
-	padding: 0 120px;
+	// padding: 0 120px;
 	height: 87vh;
 	color: $veryDarkBlue;
 	text-align: center;
+	display: flex;
+	flex-flow: column;
 
 	.statisticsTitleWrapper {
 		width: 44%;
@@ -29,23 +31,26 @@
 		position: relative;
 		justify-content: center;
 		height: 33vh;
+		width: 85%;
+		margin: 0 auto;
 
 		.border {
 			position: absolute;
 			top: 50%;
 			border-top: 8px solid $cyan;
 			height: 20px;
-			width: 70%;
+			width: 60%;
 		}
 
 		.card {
 			position: relative;
 			background-color: #fff;
-			min-width: 300px;
-			max-width: 30%;
-			height: 270px;
+			min-width: 296px;
+			width: 30%;
+			min-height: 270px;
+			max-height: 290px;
 			padding: 10px 30px;
-			margin: 15px;
+			margin: 35px 15px;
 			text-align: left;
 			border-radius: 7px;
 			z-index: 999;
@@ -65,6 +70,7 @@
 
 			.cardWordWrap {
 				margin-top: 72px;
+				margin-bottom: 50px;
 
 				p {
 					color: $darkGray;
@@ -84,6 +90,40 @@
 
 			&:nth-child(3) {
 				align-self: flex-end;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.statistics {
+		height: 100%;
+		.statisticsTitleWrapper {
+			width: 85%;
+		}
+		.cardContainer {
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			justify-content: center;
+			width: 85%;
+			height: 100%;
+			margin: 0 auto;
+			flex-grow: 1;
+			flex-basis: 0;
+
+			.border {
+				top: 50%;
+				left: -7px;
+				width: 100%;
+				transform: rotate(90deg);
+			}
+
+			.card {
+				text-align: center;
+				.icon {
+					left: 105px;
+				}
 			}
 		}
 	}
