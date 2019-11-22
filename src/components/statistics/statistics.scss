@@ -1,7 +1,6 @@
 @import "../../modules/colors";
 
 .statistics {
-	// padding: 0 120px;
 	height: 87vh;
 	color: $veryDarkBlue;
 	text-align: center;
@@ -100,13 +99,16 @@
 		height: 100%;
 		.statisticsTitleWrapper {
 			width: 85%;
+			h2 {
+				font-size: 1.7em;
+			}
 		}
 		.cardContainer {
 			display: flex;
 			flex-wrap: wrap;
 			position: relative;
 			justify-content: center;
-			width: 85%;
+			width: 96%;
 			height: 100%;
 			margin: 0 auto;
 			flex-grow: 1;
@@ -121,6 +123,8 @@
 
 			.card {
 				text-align: center;
+				height: 270px;
+				width: 100%;
 				.icon {
 					left: 105px;
 				}

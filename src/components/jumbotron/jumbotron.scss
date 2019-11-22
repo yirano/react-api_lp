@@ -97,7 +97,7 @@
 		height: 100%;
 		.top-jumbotron {
 			flex-wrap: wrap;
-			height: 80vh;
+			height: 115vh;
 			justify-content: center;
 			.leftJumbo {
 				padding-left: 0;
@@ -110,9 +110,10 @@
 				}
 				p {
 					width: 100%;
+					font-size: 0.99em;
 				}
 				button {
-					margin: 0 auto;
+					margin: 30px auto;
 				}
 			}
 			.rightJumbo {
@@ -126,6 +127,7 @@
 		.bottom-jumbotron {
 			flex-flow: column;
 			padding: 20px;
+			height: 170px;
 			input {
 				border-radius: 5px;
 				&[type="text"],

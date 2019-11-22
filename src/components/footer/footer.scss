@@ -64,5 +64,22 @@ footer {
 	footer {
 		height: 100%;
 		flex-flow: column;
+		padding: 0;
+		text-align: center;
+
+		.footerSecond {
+			flex-flow: column;
+			align-content: center;
+			width: 96%;
+		}
+
+		.footerFirst,
+		.footerSecond,
+		.footerThird {
+			width: 96%;
+			margin: 0 auto;
+			justify-content: center;
+			float: none;
+		}
 	}
 }
