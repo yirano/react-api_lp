@@ -29,6 +29,10 @@ footer {
 	.footerFirst {
 		display: flex;
 		width: 25%;
+
+		h2 {
+			font-size: 2em;
+		}
 	}
 
 	.footerSecond {
@@ -64,22 +68,38 @@ footer {
 	footer {
 		height: 100%;
 		flex-flow: column;
-		padding: 0;
+		padding: 45px 0;
 		text-align: center;
+
+		a {
+			font-size: 0.9em;
+		}
+
+		.footerFirst {
+			padding-bottom: 30px;
+		}
 
 		.footerSecond {
 			flex-flow: column;
 			align-content: center;
 			width: 96%;
+			padding-bottom: 20px;
+
+			ul {
+				margin-bottom: 20px;
+				li {
+					line-height: 1.3em;
+				}
+			}
 		}
 
 		.footerFirst,
 		.footerSecond,
 		.footerThird {
+			display: flex;
 			width: 96%;
 			margin: 0 auto;
 			justify-content: center;
-			float: none;
 		}
 	}
 }

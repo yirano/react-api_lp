@@ -2,7 +2,6 @@
 
 .jumbotron {
 	height: 88vh;
-
 	.top-jumbotron {
 		display: flex;
 		height: 87%;
@@ -99,6 +98,7 @@
 			flex-wrap: wrap;
 			height: 115vh;
 			justify-content: center;
+			flex-basis: 100%;
 			.leftJumbo {
 				padding-left: 0;
 				width: 85%;
