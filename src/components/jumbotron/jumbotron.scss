@@ -121,5 +121,18 @@
 				order: 1;
 			}
 		}
+
+		.bottom-jumbotron {
+			flex-flow: column;
+			padding: 20px;
+			input {
+				border-radius: 5px;
+				&[type="text"],
+				&[type="submit"] {
+					width: 100%;
+					margin: 10px 0;
+				}
+			}
+		}
 	}
 }
