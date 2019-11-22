@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-api_lp/static/css/main.34592d5e.chunk.css",
+    "main.css": "/react-api_lp/static/css/main.92d51a0c.chunk.css",
     "main.js": "/react-api_lp/static/js/main.3dc314df.chunk.js",
     "main.js.map": "/react-api_lp/static/js/main.3dc314df.chunk.js.map",
     "runtime-main.js": "/react-api_lp/static/js/runtime-main.7bba2e38.js",
@@ -8,9 +8,9 @@
     "static/js/2.e630a83e.chunk.js": "/react-api_lp/static/js/2.e630a83e.chunk.js",
     "static/js/2.e630a83e.chunk.js.map": "/react-api_lp/static/js/2.e630a83e.chunk.js.map",
     "index.html": "/react-api_lp/index.html",
-    "precache-manifest.bcd556d004f13b0547487070f7c75cc9.js": "/react-api_lp/precache-manifest.bcd556d004f13b0547487070f7c75cc9.js",
+    "precache-manifest.5a48cea3ce619e55d9d608361d3b122d.js": "/react-api_lp/precache-manifest.5a48cea3ce619e55d9d608361d3b122d.js",
     "service-worker.js": "/react-api_lp/service-worker.js",
-    "static/css/main.34592d5e.chunk.css.map": "/react-api_lp/static/css/main.34592d5e.chunk.css.map",
+    "static/css/main.92d51a0c.chunk.css.map": "/react-api_lp/static/css/main.92d51a0c.chunk.css.map",
     "static/media/cta.scss": "/react-api_lp/static/media/bg-boost-desktop.dc8b886b.svg",
     "static/media/jumbotron.scss": "/react-api_lp/static/media/illustration-working.5029d049.svg",
     "static/media/icon-brand-recognition.svg": "/react-api_lp/static/media/icon-brand-recognition.1922b68a.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.7bba2e38.js",
     "static/js/2.e630a83e.chunk.js",
-    "static/css/main.34592d5e.chunk.css",
+    "static/css/main.92d51a0c.chunk.css",
     "static/js/main.3dc314df.chunk.js"
   ]
 }
