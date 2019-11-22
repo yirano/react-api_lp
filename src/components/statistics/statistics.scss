@@ -29,7 +29,7 @@
 		flex-wrap: wrap;
 		position: relative;
 		justify-content: center;
-		height: 33vh;
+		height: 453px;
 		width: 85%;
 		margin: 0 auto;
 
@@ -48,6 +48,7 @@
 			width: 30%;
 			min-height: 270px;
 			max-height: 290px;
+			max-width: 290px;
 			padding: 10px 30px;
 			margin: 35px 15px;
 			text-align: left;
@@ -115,9 +116,9 @@
 			flex-basis: 0;
 
 			.border {
+				width: 100%;
 				top: 45%;
-				left: -108px;
-				width: 600px;
+				left: -1.2%;
 				transform: rotate(90deg);
 			}
 
