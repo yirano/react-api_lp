@@ -64,6 +64,27 @@ header {
 
 @media only screen and (max-width: 767px) {
 	header {
+		position: relative;
 		padding: 0;
+		justify-content: center;
+		h2 {
+			text-align: left;
+		}
+		nav {
+			position: absolute;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			top: 40px;
+			width: 90%;
+			background-color: $darkViolet;
+			border-radius: 20px;
+			.navLeft {
+				margin: 0;
+			}
+			ul {
+				flex-flow: column;
+			}
+		}
 	}
 }

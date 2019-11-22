@@ -32,6 +32,8 @@
 		height: 453px;
 		width: 85%;
 		margin: 0 auto;
+		flex-grow: 3;
+		flex-basis: 100%;
 
 		.border {
 			position: absolute;
@@ -49,6 +51,7 @@
 			min-height: 270px;
 			max-height: 290px;
 			max-width: 290px;
+			min-width: 280px;
 			padding: 10px 30px;
 			margin: 35px 15px;
 			text-align: left;
@@ -115,13 +118,6 @@
 			flex-grow: 3;
 			flex-basis: 100%;
 
-			.border {
-				width: 100%;
-				top: 48%;
-				left: -1.2%;
-				transform: rotate(90deg);
-			}
-
 			.card {
 				text-align: center;
 				height: 270px;
@@ -129,6 +125,19 @@
 				.icon {
 					left: 105px;
 				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 667px) {
+	.statistics {
+		.cardContainer {
+			.border {
+				width: 150%;
+				top: 48%;
+				left: -26.9%;
+				transform: rotate(90deg);
 			}
 		}
 	}
