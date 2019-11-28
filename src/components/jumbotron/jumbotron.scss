@@ -7,6 +7,7 @@
 		height: 87%;
 		background-color: #fff;
 		padding-bottom: 57px;
+
 		.leftJumbo {
 			display: flex;
 			flex-flow: column;
@@ -90,7 +91,7 @@
 	}
 }
 
-@media only screen and (max-width: 867px) {
+@media only screen and (max-width: 767px) {
 	.jumbotron {
 		height: 100%;
 		.top-jumbotron {
