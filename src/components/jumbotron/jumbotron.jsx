@@ -12,26 +12,15 @@ export class jumbotron extends Component {
 		};
 	}
 
-	componentDidMount() {
-		axios
-			.get('https://rel.ink/api/links/')
-			.then((response) => {
-				console.log(response);
-			})
-			.catch((error) => {
-				console.log(error);
-			});
-	}
-
 	submitHandler = (e) => {
 		e.preventDefault();
-		axios({
-			url:
-				'https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe',
-			method: 'get'
-		}).then((response) => {
-			console.log(response);
-		});
+		axios
+			.post('https://rel.ink/api/links/', {
+				url: 'https://news.ycombinator.com/'
+			})
+			.then((response) => {
+				console.log(response);
+			});
 	};
 
 	render() {
