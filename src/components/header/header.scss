@@ -2,111 +2,180 @@
 @import "../../modules/fonts";
 
 header {
-  display: flex;
-  align-items: center;
-  padding: 0 160px;
-  margin: 0 auto;
-  background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 40px 160px;
+	margin: 0 auto;
+	background-color: #fff;
 
-  h2 {
-    color: $darkViolet;
-  }
+	h2 {
+		color: $darkViolet;
+	}
 
-  nav {
-    width: 100%;
+	nav {
+		width: 100%;
 
-    ul {
-      display: flex;
-      padding: 10px 0;
+		ul {
+			display: flex;
+			padding: 10px 0;
 
-      li {
-        display: flex;
-        font-size: 0.8em;
+			li {
+				display: flex;
+				font-size: 0.8em;
 
-        a {
-          color: $darkGray;
-          font-weight: 500;
-          padding: 9px 12px;
+				a {
+					color: $darkGray;
+					font-weight: 500;
+					padding: 9px 12px;
 
-          &:hover {
-            color: $veryDarkBlue;
-          }
-        }
-      }
-    }
-  }
+					&:hover {
+						color: $veryDarkBlue;
+					}
+				}
+			}
+		}
+	}
 }
 
 .menuIcon {
-  display: none;
+	display: none;
 }
 
 .navLeft {
-  float: left;
-  margin-left: 40px;
+	float: left;
+	margin-left: 40px;
 }
 
 .navRight {
-  float: right;
+	float: right;
 }
 
 .btn-signUp {
-  margin-top: 4px;
-  height: 32px;
-  width: 70px;
-  background-color: $cyan;
-  color: #fff;
-  border-radius: 20px;
-  border: 2px solid $cyan;
-  font-size: 0.8em;
-  cursor: pointer;
+	margin-top: 4px;
+	height: 32px;
+	width: 70px;
+	background-color: $cyan;
+	color: #fff;
+	border-radius: 20px;
+	border: 2px solid $cyan;
+	font-size: 0.8em;
+	cursor: pointer;
 
-  &:hover {
-    opacity: 0.8;
-  }
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
-@media only screen and (max-width: 767px) {
-  header {
-    position: relative;
-    padding: 0;
-    display: flex;
-    flex-flow: column;
-    h2 {
-      align-self: start;
-      padding: 38px 29px;
-      font-size: 2.8em;
-    }
-    nav {
-      display: flex;
-      flex-flow: column;
-      top: 40px;
-      width: 90%;
-      background-color: $darkViolet;
-      border-radius: 20px;
-      padding: 40px 0;
-      height: 0px;
-      padding: 0px;
-      overflow: hidden;
+@media only screen and (max-width: 867px) {
+	header {
+		position: relative;
+		padding: 0;
+		display: flex;
+		flex-flow: column;
+		h2 {
+			align-self: start;
+			padding: 38px 29px;
+			font-size: 2.8em;
+		}
+		nav {
+			display: flex;
+			flex-flow: column;
+			top: 40px;
+			width: 90%;
+			background-color: $darkViolet;
+			border-radius: 12px;
+			height: 0px;
+			padding: 0px;
+			overflow: hidden;
+			transition: all 250ms ease-in;
+			font-size: 1.7em;
 
-      .navLeft {
-        margin: 0;
-      }
-      ul {
-        flex-flow: column;
-        align-items: center;
-      }
-    }
-    .show {
-      height: 100%;
-      padding: 40px 0;
-      overflow: visible;
-    }
-  }
-  .menuIcon {
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 50px;
-  }
+			.navLeft {
+				margin: 0 auto;
+				margin-bottom: 7px;
+				border-bottom: $darkGray solid 1px;
+				width: 80%;
+			}
+			.navRight {
+				button {
+					width: 100%;
+					height: 55px;
+					border-radius: 40px;
+					font-size: 1em;
+					font-weight: 600;
+				}
+			}
+			ul {
+				flex-flow: column;
+				align-items: center;
+				li {
+					justify-content: center;
+					margin-bottom: 17px;
+					width: 80%;
+					a {
+						color: #fefefe;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		.show {
+			height: 440px;
+			padding: 30px 0;
+			transition: all 250ms ease-in;
+		}
+	}
+	.menuIcon {
+		display: block;
+		position: absolute;
+		top: 40px;
+		right: 20px;
+		width: 50px;
+		height: 50px;
+		outline: none;
+		background-color: transparent;
+		border: none;
+
+		span {
+			height: 11px;
+			display: block;
+			width: 60%;
+			border-top: 4px solid $darkGray;
+		}
+	}
+	.menuActive {
+		span {
+			position: relative;
+			transition: all 200ms linear;
+			&:nth-child(1) {
+				transform: rotate(45deg);
+				top: 7px;
+				left: -4px;
+			}
+			&:nth-child(2) {
+				top: -4px;
+				transform: rotate(-45deg);
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+				top: -14.6px;
+			}
+		}
+	}
+
+	.menuInactive {
+		span {
+			transition: all 200ms linear;
+			&:nth-child(1) {
+				transform: rotate(360deg);
+			}
+			&:nth-child(2) {
+				transform: rotate(360deg);
+			}
+			&:nth-child(3) {
+				transform: rotate(360deg);
+			}
+		}
+	}
 }

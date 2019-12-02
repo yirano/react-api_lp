@@ -12,15 +12,26 @@ export class jumbotron extends Component {
 		};
 	}
 
-	// componentDidMount() {
-	//   fetch('https://rel.ink/api/links/', {
-	//     method: 'POST',
-	//     body: 'https://www.youtube.com/watch?v=hzLDsxPGctY'
-	//   })
-	// }
+	componentDidMount() {
+		axios
+			.get('https://rel.ink/api/links/Nn8y9p/')
+			.then((response) => {
+				console.log(response);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	}
+
+	submitHandler = (e) => {
+		e.preventDefault();
+		console.log(this.state);
+		axios.post('https://news.ycombinator.com/').then((response) => {
+			console.log(response);
+		});
+	};
 
 	render() {
-		let { isLoaded, items } = this.state;
 		return (
 			<section className="jumbotron">
 				<div className="top-jumbotron">
@@ -34,8 +45,10 @@ export class jumbotron extends Component {
 					<div className="rightJumbo" />
 				</div>
 				<div className="bottom-jumbotron">
-					<input type="text" id="text" placeholder="Shorten a link here..." />
-					<input type="submit" value="Shorten it!" />
+					<form onSubmit={this.submitHandler}>
+						<input type="text" id="text" placeholder="Shorten a link here..." />
+						<input type="submit" value="Shorten it!" />
+					</form>
 				</div>
 			</section>
 		);
