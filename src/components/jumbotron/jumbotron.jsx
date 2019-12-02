@@ -14,7 +14,7 @@ export class jumbotron extends Component {
 
 	componentDidMount() {
 		axios
-			.get('https://rel.ink/api/links/Nn8y9p/')
+			.get('https://rel.ink/api/links/')
 			.then((response) => {
 				console.log(response);
 			})
@@ -25,8 +25,11 @@ export class jumbotron extends Component {
 
 	submitHandler = (e) => {
 		e.preventDefault();
-		console.log(this.state);
-		axios.post('https://news.ycombinator.com/').then((response) => {
+		axios({
+			url:
+				'https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe',
+			method: 'get'
+		}).then((response) => {
 			console.log(response);
 		});
 	};
