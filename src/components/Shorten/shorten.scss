@@ -34,6 +34,29 @@ form {
 	}
 }
 
+.results {
+	width: 80%;
+	margin: 0 auto;
+
+	ul li {
+		list-style-type: none;
+	}
+
+	.leftResult {
+		float: left;
+	}
+
+	.rightResult {
+		float: right;
+		color: $cyan;
+	}
+	&::after {
+		clear: both;
+		display: table;
+		content: '';
+	}
+}
+
 .btn-jumbotron,
 .btn-cta {
 	width: 200px;
