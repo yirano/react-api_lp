@@ -69,19 +69,5 @@
 				background-position: center;
 			}
 		}
-
-		.bottom-jumbotron {
-			flex-flow: column;
-			padding: 20px;
-			height: 170px;
-			input {
-				border-radius: 5px;
-				&[type="text"],
-				&[type="submit"] {
-					width: 100%;
-					margin: 10px 0;
-				}
-			}
-		}
 	}
 }
