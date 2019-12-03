@@ -36,12 +36,6 @@ export class jumbotron extends Component {
 					</div>
 					<div className="rightJumbo" />
 				</div>
-				<div className="bottom-jumbotron">
-					<form onSubmit={this.submitHandler}>
-						<input type="text" id="text" placeholder="Shorten a link here..." />
-						<input type="submit" value="Shorten it!" />
-					</form>
-				</div>
 			</section>
 		);
 	}

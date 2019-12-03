@@ -1,0 +1,53 @@
+@import '../../modules/colors';
+
+.bottom-jumbotron {
+	display: flex;
+	margin: 10px auto;
+	height: 160px;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	background-color: $darkViolet;
+	background-image: url('../../imgs/bg-shorten-desktop.svg');
+	background-size: cover;
+	border-radius: 10px;
+	margin-top: -80px;
+
+	input {
+		border: none;
+		border-radius: 10px;
+		height: 37%;
+		font-size: 1em;
+
+		&[type="text"] {
+			// height: 30%;
+			width: 72%;
+			padding: 10px 20px;
+		}
+
+		&[type="submit"] {
+			// height: 35%;
+			width: 168px;
+			background-color: $cyan;
+			margin-left: 20px;
+			color: #fff;
+		}
+	}
+}
+
+.btn-jumbotron,
+.btn-cta {
+	width: 200px;
+	height: 55px;
+	background-color: $cyan;
+	color: #fff;
+	border-radius: 30px;
+	border: none;
+	margin-top: 25px;
+	font-size: 1.1em;
+
+	&:hover {
+		background-color: rgb(97, 238, 238);
+		cursor: pointer;
+	}
+}
