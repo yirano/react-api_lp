@@ -2,39 +2,37 @@
 
 .jumbotron {
 	height: 88vh;
-	.top-jumbotron {
+	display: flex;
+	height: 100%;
+	background-color: #fff;
+	padding-bottom: 57px;
+	.leftJumbo {
 		display: flex;
-		height: 87%;
-		background-color: #fff;
-		padding-bottom: 57px;
-		.leftJumbo {
-			display: flex;
-			flex-flow: column;
-			width: 55%;
-			align-self: center;
-			padding-left: 160px;
-			color: $darkGray;
+		flex-flow: column;
+		width: 55%;
+		align-self: center;
+		padding-left: 160px;
+		color: $darkGray;
 
-			h1 {
-				font-size: 4.2em;
-				color: $veryDarkViolet;
-				line-height: 1.2em;
-			}
-
-			p {
-				width: 80%;
-				font-size: 1.2em;
-			}
+		h1 {
+			font-size: 4.2em;
+			color: $veryDarkViolet;
+			line-height: 1.2em;
 		}
 
-		.rightJumbo {
-			flex-shrink: 0;
-			width: 45%;
-			background: url('../../imgs/illustration-working.svg') no-repeat;
-			overflow: visible;
-			background-size: auto 70%;
-			background-position-y: center;
+		p {
+			width: 80%;
+			font-size: 1.2em;
 		}
+	}
+
+	.rightJumbo {
+		flex-shrink: 0;
+		width: 45%;
+		background: url('../../imgs/illustration-working.svg') no-repeat;
+		overflow: visible;
+		background-size: auto 70%;
+		background-position-y: center;
 	}
 }
 @media only screen and (max-width: 867px) {
