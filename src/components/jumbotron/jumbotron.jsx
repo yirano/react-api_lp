@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import './jumbotron.scss';
 
 export class jumbotron extends Component {
@@ -11,17 +10,6 @@ export class jumbotron extends Component {
 			items: []
 		};
 	}
-
-	submitHandler = (e) => {
-		e.preventDefault();
-		axios
-			.post('https://rel.ink/api/links/', {
-				url: 'https://news.ycombinator.com/'
-			})
-			.then((response) => {
-				console.log(response);
-			});
-	};
 
 	render() {
 		return (
