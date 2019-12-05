@@ -21,20 +21,18 @@ export class shorten extends Component {
 					<input type="submit" value="Shorten it!" />
 				</form>
 				<div className="results">
-					<ul>
-						<li>
-							<div className="leftResult">https://www.frontendmentor.io</div>
-							<div className="rightResult">https://relink/abcdef</div>
-						</li>
-						<li>
-							<div className="leftResult">https://www.frontendmentor.io</div>
-							<div className="rightResult">https://relink/abcdef</div>
-						</li>
-						<li>
-							<div className="leftResult">https://www.frontendmentor.io</div>
-							<div className="rightResult">https://relink/abcdef</div>
-						</li>
-					</ul>
+					<div className="resultItem">
+						<span className="leftResult">https://www.frontendmentor.io</span>
+						<span className="rightResult">https://relink/abcdef</span>
+					</div>
+					<div className="resultItem">
+						<span className="leftResult">https://www.frontendmentor.io</span>
+						<span className="rightResult">https://relink/abcdef</span>
+					</div>
+					<div className="resultItem">
+						<span className="leftResult">https://www.frontendmentor.io</span>
+						<span className="rightResult">https://relink/abcdef</span>
+					</div>
 				</div>
 			</section>
 		);
