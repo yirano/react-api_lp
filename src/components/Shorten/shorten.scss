@@ -1,5 +1,9 @@
 @import '../../modules/colors';
 
+.shorten {
+	height: 100%;
+}
+
 form {
 	display: flex;
 	margin: 10px auto;
@@ -11,7 +15,6 @@ form {
 	background-image: url('../../imgs/bg-shorten-desktop.svg');
 	background-size: cover;
 	border-radius: 10px;
-	margin-top: -80px;
 
 	input {
 		border: none;
@@ -37,13 +40,24 @@ form {
 .results {
 	width: 80%;
 	margin: 0 auto;
+	height: 100%;
 
 	ul li {
 		list-style-type: none;
+		height: 50px;
+		background-color: #fff;
+		padding: 14px;
+		margin: 10px 0;
+		border-radius: 6px;
 	}
 
 	.leftResult {
 		float: left;
+		&::after {
+			clear: both;
+			display: table;
+			content: '';
+		}
 	}
 
 	.rightResult {

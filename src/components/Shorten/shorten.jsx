@@ -15,7 +15,7 @@ export class shorten extends Component {
 	};
 	render() {
 		return (
-			<div class="bottom-jumbotron">
+			<section className="shorten">
 				<form onSubmit={this.submitHandler}>
 					<input type="text" id="text" placeholder="Shorten a link here..." />
 					<input type="submit" value="Shorten it!" />
@@ -36,7 +36,7 @@ export class shorten extends Component {
 						</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }
