@@ -2,6 +2,7 @@
 
 .shorten {
 	height: 100%;
+	position: relative;
 }
 
 form {
@@ -49,25 +50,25 @@ form {
 		padding: 14px;
 		margin: 10px 0;
 		border-radius: 6px;
-	}
 
-	.leftResult {
-		float: left;
+		.leftResult {
+			float: left;
+			&::after {
+				clear: both;
+				display: table;
+				content: '';
+			}
+		}
+
+		.rightResult {
+			float: right;
+			color: $cyan;
+		}
 		&::after {
 			clear: both;
 			display: table;
 			content: '';
 		}
-	}
-
-	.rightResult {
-		float: right;
-		color: $cyan;
-	}
-	&::after {
-		clear: both;
-		display: table;
-		content: '';
 	}
 }
 

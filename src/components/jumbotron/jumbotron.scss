@@ -1,9 +1,8 @@
 @import '../../modules/colors';
 
 .jumbotron {
-	height: 100vh;
+	height: 90vh;
 	display: flex;
-	height: 100%;
 	background-color: #fff;
 	padding-bottom: 57px;
 	.leftJumbo {
@@ -37,35 +36,32 @@
 }
 @media only screen and (max-width: 867px) {
 	.jumbotron {
+		flex-flow: column;
 		height: 100%;
-		.top-jumbotron {
-			flex-wrap: wrap;
-			height: 115vh;
-			justify-content: center;
-			flex-basis: 100%;
-			.leftJumbo {
-				padding-left: 0;
-				width: 85%;
-				height: 50%;
-				text-align: center;
-				order: 2;
-				h1 {
-					font-size: 2.5em;
-				}
-				p {
-					width: 100%;
-					font-size: 0.99em;
-				}
-				button {
-					margin: 30px auto;
-				}
+
+		.leftJumbo {
+			padding-left: 0;
+			width: 85%;
+			height: 50%;
+			text-align: center;
+			order: 2;
+			h1 {
+				font-size: 2.5em;
 			}
-			.rightJumbo {
+			p {
 				width: 100%;
-				height: 50%;
-				order: 1;
-				background-position: center;
+				font-size: 0.99em;
 			}
+			button {
+				margin: 30px auto;
+			}
+		}
+		.rightJumbo {
+			width: 100%;
+			height: 50vh;
+			order: 1;
+			background-position: center;
+			background-size: cover;
 		}
 	}
 }
