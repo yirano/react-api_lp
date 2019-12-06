@@ -30,7 +30,7 @@ form {
 
 		&[type="submit"] {
 			// height: 35%;
-			width: 168px;
+			width: 15%;
 			background-color: $cyan;
 			margin-left: 20px;
 			color: #fff;
@@ -86,5 +86,25 @@ form {
 	&:hover {
 		background-color: rgb(97, 238, 238);
 		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 867px) {
+	form {
+		flex-flow: column;
+		input {
+			&[type="text"] {
+				width: 90%;
+				padding: 10px 20px;
+			}
+
+			&[type="submit"] {
+				width: 90%;
+				background-color: $cyan;
+				margin-left: 0px;
+				margin-top: 10px;
+				color: #fff;
+			}
+		}
 	}
 }
