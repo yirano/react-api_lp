@@ -3,11 +3,24 @@ import axios from 'axios';
 import './shorten.scss';
 
 export class shorten extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			urlValue: ''
+		};
+	}
+
+	getValue = () => {
+		this.setState = (urlValue) => {
+			urlValue = document.getElementById('url');
+		};
+	};
+
 	submitHandler = (e) => {
 		e.preventDefault();
 		axios
 			.post('https://rel.ink/api/links/', {
-				url: 'https://news.ycombinator.com/'
+				url: this.state.urlValue
 			})
 			.then((response) => {
 				console.log(response);
@@ -17,8 +30,8 @@ export class shorten extends Component {
 		return (
 			<section className="shorten">
 				<form onSubmit={this.submitHandler}>
-					<input type="text" id="text" placeholder="Shorten a link here..." />
-					<input type="submit" value="Shorten it!" />
+					<input type="text" id="url" placeholder="Shorten a link here..." />
+					<input type="submit" value="Shorten it!" onClick={this.getValue} />
 				</form>
 				<div className="results">
 					{/* <div className="resultItem">
